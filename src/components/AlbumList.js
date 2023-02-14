@@ -1,10 +1,14 @@
 import React from "react";
 import AlbumCard from "./AlbumCard";
 import { albums } from "../data/albums";
-
+import GenrePicker from "./GenrePicker"
 function AlbumList() {
   return (
+    <div>
+       <GenrePicker/>
     <section className="albums">
+      
+     
       <AlbumCard
         name="Classic Tuna Cans Being Opened"
         image="https://target.scene7.com/is/image/Target/GUEST_360eeed2-1747-4b15-8394-a22c7cd12230?wid=488&hei=488&fmt=pjpeg"
@@ -26,6 +30,7 @@ function AlbumList() {
         genre="Dogs"
       />
     </section>
+    </div>
   );
 }
 
